@@ -6,8 +6,13 @@ const collectEmployees = function(employeesArray) //added employeesArray//
  {
    const employees=[]; //created an empty array to get users input//
    let addingEmployees=true; //created a let with a value for the while loop //
-   while (addingEmployees)//while loop//
-   
+   while (addingEmployees) //while loop//
+   {
+    const firstName = prompt("Add first name here:");
+    const lastNameName = prompt("Add last name here:");
+    const salary = prompt("Salary here:");
+   }
+
 
   // TODO: Get user input to create and return an array of employee objects
 }
