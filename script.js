@@ -11,6 +11,11 @@ const collectEmployees = function(employeesArray) //added employeesArray//
     const firstName = prompt("Add first name here:");
     const lastNameName = prompt("Add last name here:");
     const salary = prompt("Salary here:");
+    
+    //created a false statement to ask for loop to stop//
+    //create a const for the false statement//
+    const addEmployee = confirm ("Do you want to add another employee?");
+    if (!addEmployee) {addingEmployees = false;}
    }
 
 
