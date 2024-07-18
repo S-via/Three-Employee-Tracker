@@ -8,14 +8,19 @@ const collectEmployees = function(employeesArray) //added employeesArray//
    let addingEmployees=true; //created a let with a value for the while loop //
    while (addingEmployees) //while loop//
    {
-    const firstName = prompt("Add first name here:");
-    const lastNameName = prompt("Add last name here:");
-    const salary = prompt("Salary here:");
+    const firstName = prompt("Add first name here:"); // for every firstName entry it will promt "Add first name" //
+    const lastName = prompt("Add last name here:"); // for every lastName entry will prompt "Add last name"//
+    const salary = prompt("Salary here:"); // for every  salary entry will prompt salary here//
     
-    //created a false statement to ask for loop to stop//
-    //create a const for the false statement//
+    
+    
     const addEmployee = confirm ("Do you want to add another employee?");
-    if (!addEmployee) {addingEmployees = false;}
+    if (!addEmployee) {addingEmployees = false;} // a const for the false statement// // a false statement to ask for loop to stop//
+
+    //add an empty const to store the user input//
+    //use the .push  to store const employees to the empty const//
+    //return//
+    //console.log//
    }
 
 
@@ -25,11 +30,14 @@ const collectEmployees = function(employeesArray) //added employeesArray//
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  //salary =isNan(Number.Nan); //make it return true//
+  //merge it to line 88 to make it display in cell//
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  //merge to line 93 to have it display to cell
 }
 
 /*
@@ -73,7 +81,7 @@ const displayEmployees = function(employeesArray) {
   }
 }
 
-const trackEmployeeData = function() {
+function trackEmployeeData() {
   const employees = collectEmployees();
 
   console.table(employees);
@@ -84,7 +92,7 @@ const trackEmployeeData = function() {
 
   getRandomEmployee(employees);
 
-  employees.sort(function(a,b) {
+  employees.sort(function (a, b) {
     if (a.lastName < b.lastName) {
       return -1;
     } else {
