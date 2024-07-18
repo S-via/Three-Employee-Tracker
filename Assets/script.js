@@ -4,6 +4,8 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function(employeesArray) //added employeesArray//
  {
+   const employees=[]; //created an empty array to get users input//
+   
   // TODO: Get user input to create and return an array of employee objects
 }
 
