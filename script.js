@@ -11,17 +11,18 @@ const collectEmployees = function(employeesArray) //added employeesArray//
     const firstName = prompt("Add first name here:"); // for every firstName entry it will promt "Add first name" //
     const lastName = prompt("Add last name here:"); // for every lastName entry will prompt "Add last name"//
     const salary = prompt("Salary here:"); // for every  salary entry will prompt salary here//
-    
-    
-    
-    const addEmployee = confirm ("Do you want to add another employee?");
-    if (!addEmployee) {addingEmployees = false;} // a const for the false statement// // a false statement to ask for loop to stop//
+    addingEmployee = confirm ("Do you want to add another employee?");  //a flase statement to ask user if they to keep adding another employee//
+    // if not the information that input will be store in the variable below //
+    const newInfo = {firstName,lastName,salary} //variable that will store first name , last name , salary //
+
+    employees.push(newInfo); // Push method , so that the information that was inpute form employees will be pushed in the varible newInfo//
 
     //add an empty const to store the user input//
     //use the .push  to store const employees to the empty const//
     //return//
     //console.log//
    }
+   return employees; // return to close the variable collect employees//
 
 
   // TODO: Get user input to create and return an array of employee objects
@@ -30,8 +31,18 @@ const collectEmployees = function(employeesArray) //added employeesArray//
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-  //salary =isNan(Number.Nan); //make it return true//
-  //merge it to line 88 to make it display in cell//
+let total = 0 // for loop
+let quanity= employeesArray.length; // to displayaveragesalary of the length that will stored from variable employee and variable 
+for (let i=0; i < employeesArray.length; i++){ //loop to display every length of employeesArray and increment
+  const employee = employeesArray[i]; // create variable employee to equal the formula above 
+  const salary = employee.salary; //merge variable employee to salary
+  total += parseFloat(salary) // assignment operator to add equal the total and salary ,used parse Float to convert salary from string to number 
+
+}
+console.log(total/quanity); // console log everything in the total variable with arithmetic operator division to display the average salary 
+return total/quanity; 
+
+ 
 }
 
 // Select a random employee
