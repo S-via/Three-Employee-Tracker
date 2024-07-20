@@ -2,10 +2,10 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const collectEmployees = function(employeesArray) //added employeesArray//
+const collectEmployees = function() //added employeesArray//
  {
-   const employees=[]; //created an empty array to get users input//
-   let addingEmployees=true; //created a let with a value for the while loop //
+   let employees=[]; //created an empty array to get users input//
+   const addingEmployees=true; //created a let with a value for the while loop //
    while (addingEmployees) //while loop//
    {
     const firstName = prompt("Add first name here:"); // for every firstName entry it will promt "Add first name" //
