@@ -4,14 +4,14 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function() //added employeesArray//
  {
-   let employees=[]; //created an empty array to get users input//
-   const addingEmployees=true; //created a let with a value for the while loop //
+   let addingEmployees= true; //created an empty array to get users input//
+   const employees=[]; //created a let with a value for the while loop //
    while (addingEmployees) //while loop//
    {
     const firstName = prompt("Add first name here:"); // for every firstName entry it will promt "Add first name" //
     const lastName = prompt("Add last name here:"); // for every lastName entry will prompt "Add last name"//
     const salary = prompt("Salary here:"); // for every  salary entry will prompt salary here//
-    addingEmployee = confirm ("Do you want to add another employee?");  //a flase statement to ask user if they to keep adding another employee//
+    addingEmployees = confirm ("Do you want to add another employee?");  //a flase statement to ask user if they to keep adding another employee//
     // if not the information that input will be store in the variable below //
     const newInfo = {firstName,lastName,salary} //variable that will store first name , last name , salary //
 
@@ -36,7 +36,7 @@ let quanity= employeesArray.length; // to displayaveragesalary of the length tha
 for (let i=0; i < employeesArray.length; i++){ //loop to display every length of employeesArray and increment
   const employee = employeesArray[i]; // create variable employee to equal the formula above 
   const salary = employee.salary; //merge variable employee to salary
-  total += parseFloat(salary) // assignment operator to add equal the total and salary ,used parse Float to convert salary from string to number 
+  total += parseFloat(salary); // assignment operator to add equal the total and salary ,used parse Float to convert salary from string to number 
 
 }
 console.log(total/quanity); // console log everything in the total variable with arithmetic operator division to display the average salary 
